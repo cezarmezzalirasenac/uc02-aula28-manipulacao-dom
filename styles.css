@@ -1,0 +1,165 @@
+/* RESET global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* FIM RESET GLOBAL */
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-weight: 100;
+}
+
+#container {
+  width: 80vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header {
+  width: 100%;
+  height: 300px;
+  background-color: #004ADB;
+  display: grid;
+  grid-template-columns: 35% 35% 30%;
+  align-items: center;
+  padding: 0 50px;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+#header img {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+}
+
+#title h1 {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+#title span {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#contact {
+  text-align: end;
+}
+
+#contact a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#contact ul li {
+  list-style: none;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#content {
+  width: 90%;
+  height: auto;
+  color: #000;
+  /* background-color: azure; */
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px;
+}
+
+#about h1 {
+  font-size: 50px;
+  color: #004ADB;
+}
+
+#about p {
+  font-size: 20px;
+  text-align: justify;
+  font-weight: 300;
+}
+
+
+#details {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  margin-top: 20px;
+}
+
+.general-lists {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.general-lists h1 {
+  color: #004ADB;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.item-detail h2 {
+  color: #004ADB;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.item-detail span {
+  color: #004ADB;
+  font-size: 15px;
+  font-weight: 300;
+  font-style:italic;
+}
+
+.item-detail p {
+  margin-top: 10px;
+  text-align: justify;
+}
+
+#extras {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  margin-top: 20px;
+}
+
+.general-lists ul li {
+  list-style-position: inside;
+  color: #004ADB;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.division-line {
+  margin-top: 10px;
+  border-color: #004ADB;
+}
